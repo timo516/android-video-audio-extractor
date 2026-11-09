@@ -1,0 +1,9 @@
+# GitHub Linguist 语言统计配置
+#
+# web/ 下的单文件 HTML（约 43 MB）是构建产物：内联了全部 JS/CSS/字体。
+# 它会被 Linguist 按 HTML 计入字节统计，导致仓库主语言被误判为 HTML。
+# 下面把它排除出语言统计，使语言占比反映真实源码：
+#   Kotlin（Android App）、Python（CLI 工具）、Shell（构建脚本）。
+#
+web/*.html linguist-generated
+web/*.html linguist-documentation
